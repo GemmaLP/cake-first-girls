@@ -195,9 +195,17 @@
     color: #015C75;
     padding: 20px 10px 20px 10px;
   }
+
+  .middle_footer a:not(:last-child)::after {
+    content: "|";
+    padding-left: 0.3rem;
+  }
+
   .middle_footer a:visited {
     color: #015C75;
   }
+
+
   .middle_footer a {
     text-decoration: none;
     color: #015C75;
