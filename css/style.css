@@ -1,0 +1,204 @@
+/* reset css */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header nav bar */ 
+#logo {
+  height: 60px;
+  width: 60px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  background-color: #F2A0BE;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px 10px 20px 10px;
+}
+.nav_heading a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+}
+.nav_right a {
+  text-decoration: none;
+  padding: 0 5px;
+}
+.nav_right a:visited {
+  color: whitesmoke;
+}
+.banner_image {
+  height: 200px;
+  width: 100%;
+  background-color: whitesmoke;
+  font-family: 'Montserrat', sans-serif;
+  padding: 45px;
+  color: #015C75;
+}
+
+
+
+
+
+/*hero image*/
+.hero_image {
+  height: 600px;
+}
+
+.hero_image img {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/*main page content*/
+.page1_main {
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(#E9D4E3,whitesmoke, #C4EEF2);
+}
+
+
+
+.intro_text {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 70px;
+    justify-content: center
+}
+
+.intro_text h2 {
+    margin: 20px;
+    font-family: 'Caveat', cursive;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #015C75;
+}
+
+.intro_text p {
+    margin: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #015C75;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.line_1 {
+    margin-top: 10px;
+    height: 1px;
+    background: gray;
+    width: 320px;
+  }
+
+
+
+
+  /*Slide carousel*/
+  .carousel_container {
+    width: 100%;
+    margin: 45px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Make the images invisible by default */
+  .carousel_slide {
+    display: none;
+  }
+  
+  .carousel_slide img {
+    border: #F2A0BE solid;
+    border-radius: 10px;
+  }
+  
+  /* forward & Back buttons */
+  .Back, .forward {
+    cursor: pointer;
+    width: auto;
+    padding: 17px;
+    color: grey;
+    font-weight: bold;
+    font-size: 28px;
+    transition: 0.4s ease;
+    border-radius: 0 5px 5px 0;
+    user-select: none;
+  }
+  
+  /* Place the "forward button" to the right */
+  .forward {
+    border-radius: 4px 0 0 4px;
+  }
+  
+  /*when the user hovers,add a background color*/
+  .Back:hover, .forward:hover {
+    background-color: #C4EEF2;
+  } 
+  
+  /* Caption Info */
+  .carousel_text {
+    color: #015C75;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    margin-top: 10px;;
+    text-align: center;
+  }
+  
+  
+ 
+
+
+  /*shop now button*/
+  .shop_now_button { 
+    margin-top: 20px;
+    margin-bottom: 70px;
+    display: flex;
+    background-color: #015C75;
+    color: whitesmoke;
+    height: 60px;
+    width: 276px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .shop_now_button a {
+    color: whitesmoke;
+    text-decoration: none;
+  }
+
+  /*footer*/
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    bottom: 0;
+    width: 100%;
+    background-color: #E9D4E3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #015C75;
+    padding: 20px 10px 20px 10px;
+  }
+  .middle_footer a:visited {
+    color: #015C75;
+  }
+  .middle_footer a {
+    text-decoration: none;
+    color: #015C75;
+  }
