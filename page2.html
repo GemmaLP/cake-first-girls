@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Configure your cupcake</title>
+  <link rel="stylesheet" href="/page2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+  <script src="/page2.js"></script>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="nav_img_left">
+      <a href="#"><img id="logo" src="/images/cake first girls logo.png" alt="Logo"></a>
+    </div>
+    <div class="nav_heading">
+      <a href="#"><span style="font-family: 'Caveat', cursive;">CAKE</span> First Girls</a>
+    </div>
+    <div class="nav_right">
+      <a href="#">Shop</a>
+      <a href="#">Basket</a>
+    </div>
+  </div>
+
+  <!-- HERO IMAGE -->
+  <img class="heroImage" src="/images/CFG-hero-image.jpg" alt="Hero Image">
+  
+  <!-- MAIN CONTENT -->
+  <div class="background">
+      <h1>Design Your Cupcake</h1>
+      
+      <div class="select">
+        <div class="frosting_sprinkles">
+          <h2>Sponge</h2>
+          <form>
+            <select id="flavourSelect" onchange="selectFlavour()">
+              <option value="">Select a Flavour</option>
+              <option value="Vanilla">Vanilla</option>
+              <option value="Red Velvet">Red Velvet</option>
+              <option value="Chocolate">Chocolate</option>
+            </select>
+          </form>
+        </div>
+      </div>
+
+      <div class="toppings">
+        <div class="frosting_sprinkles">
+          <h2>Toppings</h2>
+            <form>
+              <select name="frosting" id="frostingSelect" onchange="selectFrosting()">
+                <option value="heading">Select a Frosting</option>
+                <option value="Vanilla">Vanilla</option>
+                <option value="Lemon">Lemon</option>
+                <option value="Chocolate">Chocolate</option>
+              </select>
+            </form>
+            <form>
+              <select name="sprinkles" id="sprinklesSelect" onchange="selectSprinkles()">
+                <option value="heading">Select Sprinkles</option>
+                <option value="Rainbow Sprinkles">Rainbow Sprinkles</option>
+                <option value="Red Sprinkles">Red Sprinkles</option>
+                <option value="Chocolate Drops">Chocolate Drops</option>
+                <option value="No Sprinkles">No Sprinkles</option>
+              </select>
+            </form>
+        </div>
+      </div>
+
+      <h2>Your Finished Cake</h2>
+      <div class="selectedCake">
+        <img class="chosen_cake" src="/images/cake first girls logo.png" alt="Selected Cake">
+      </div>    
+  </div>
+
+    <!-- BOTTOM OF PAGE -->
+    <div class="page2Bottom">
+      <h2>Looking Good!<div>
+        <h6>Now choose your packaging<h6>  
+          <div class="packaging">
+            <img class="packaging_image" src="/images/green_cake_box.jpg" alt="packaging">  
+            <img class="packaging_image" src="/images/orange_cake_box.jpg" alt="packaging">  
+            <img class="packaging_image" src="/images/purple_confetti_cake_box.jpg" alt="packaging">  
+            <img class="packaging_image" src="/images/striped_cake_box.jpg" alt="packaging">   
+            <img class="packaging_image" src="images/pink_cake_box.jpg" alt="packaging">  
+            <img class="packaging_image" src="images/teal_cake_box.jpg" alt="packaging">  
+            <img class="packaging_image" src="images/yellow_cake_box.jpg" alt="packaging">  
+          </div>
+          <form>
+            <select name="packaging" id="packagingSelect" onchange="selectPackaging()">
+              <option value="heading">Select Packaging</option>
+              <option value="Green">Green</option>
+              <option value="Orange">Orange</option>
+              <option value="Purple Confetti">Purple Confetti</option>
+              <option value="Yellow Stripes">Yellow Stripes</option>
+              <option value="Pink">Pink</option>
+              <option value="Teal">Teal</option>
+              <option value="Yellow">Yellow</option>
+            </select>
+          </form>
+      <p>You can tell us about any dietary requirements and review your order on the next page</p>
+      <div class="buttonContainer">
+        <button class="reviewButton"><a href="/page3.html">Review Your Order</a></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="left_footer">
+      <p>&copy Cake First Girls 2022</p>
+    </div>
+    <div class="middle_footer">
+      <a href="#">Home |</a>
+      <a href="#">About |</a>
+      <a href="#">Shop |</a>
+      <a href="#">Help</a>
+    </div>
+    <div class="right_footer">
+      <p>Made with Love &#9829</p>
+    </div>
+  </footer>
+</body>
+</html>

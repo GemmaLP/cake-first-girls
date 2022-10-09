@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#logo {
+  height: 60px;
+  width: 60px;
+}
+
+
+.background {
+  height: auto;
+  background-color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: #F2A0BE;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px 10px 20px 10px;
+}
+
+.nav_heading a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav_right a {
+  text-decoration: none;
+  padding: 0 5px;
+}
+
+.nav_right a:visited {
+  color: whitesmoke;
+}
+
+.heroImage {
+  display: flex;
+  width: 100%;
+  border-bottom: #015C75 solid 0.5px;
+  margin-bottom: 100px;
+}
+
+h1 {
+  font-family: 'Caveat', cursive;
+  font-size: 80px;
+  text-align: center;
+  color: #015C75;
+  padding: 40px 0 0 40px;
+}
+
+h2 {
+  font-family: 'Caveat', cursive;
+  font-size: 40px;
+  text-align: center;
+  color: #015C75;
+  padding: 40px 0 0 40px;
+}
+
+.chosen_cake {
+  height: 300px;
+  width: 300px;
+  padding: 30px;
+}
+
+.toppings, .select {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.frosting_sprinkles {
+  display: flex;
+  flex-direction: column;
+}
+
+.selectedCake {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+  border-bottom: #015C75 solid 0.5px;
+}
+
+form {
+  padding: 15px;
+}
+
+select {
+  padding: 5px;
+  border: 1px solid #015C75;
+  border-radius: 5px;
+  height: 40px;
+  width: 175px;
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  color: #015C75;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #015C75;
+  font-size: 18px;
+  padding: 20px;
+}
+
+.page2Bottom {
+  background-color: #F3F1F4;
+}
+
+.packaging {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px 0 40px 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #015C75;
+}
+
+.packaging_image {
+  height: 120px;
+  width: 120px;
+  border: solid 2px #015C75;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.buttonContainer {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.reviewButton {
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+  margin: 10px;
+  width: 200px;
+  background-color: #015C75;
+  border: solid 2px #015C75;
+  border-radius: 10px;
+}
+
+.reviewButton a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  bottom: 0;
+  width: 100%;
+  background-color: #E9D4E3;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: #015C75;
+  padding: 20px 10px 20px 10px;
+}
+
+.middle_footer a:visited {
+  color: #015C75;
+}
+
+.middle_footer a {
+  text-decoration: none;
+}

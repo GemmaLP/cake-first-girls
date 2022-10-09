@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: auto;
+}
+
+#logo {
+  height: 60px;
+  width: 60px;
+}
+
+.background {
+  height: 100%;
+  background-image: linear-gradient(#F3F1F4, #C4EEf2);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: #F2A0BE;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px 10px 20px 10px;
+}
+
+.nav_heading a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav_right a {
+  text-decoration: none;
+  padding: 0 5px;
+}
+
+.nav_right a:visited {
+  color: whitesmoke;
+}
+
+h2 {
+  font-family: 'Caveat', cursive;
+  font-size: 50px;
+  text-align: center;
+  color: #015C75;
+  padding: 40px 0 0 40px;
+}
+
+.summary_page {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 40px 0 40px 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #015C75;
+}
+
+.page_heading {
+  font-family: 'Caveat', cursive;
+  font-size: 50px;
+  text-align: center;
+  color: #015C75;
+  padding: 40px 0 0 40px;
+}
+
+.your_cake_img {
+  height: 250px;
+  width: 250px;
+  border: #015C75 solid 1px;
+  border-radius: 10px;
+}
+
+textarea {
+  box-sizing: border-box;
+  border: #015C75 solid 2px;
+  border-radius: 5px;
+  background-color: whitesmoke;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  color: #015C75;
+  resize: none;
+}
+
+.orderButton {
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+  display: block;
+  margin: 10px;
+  width: 200px;
+  background-color: #015C75;
+  border: solid 2px #015C75;
+  border-radius: 10px;
+  color: whitesmoke
+}
+
+.orderButton a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  bottom: 0;
+  width: 100%;
+  background-color: #E9D4E3;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: #015C75;
+  padding: 20px 10px 20px 10px;
+}
+
+.middle_footer a:visited {
+  color: #015C75;
+}
+
+.middle_footer a {
+  text-decoration: none;
+}
