@@ -50,14 +50,14 @@
 
 /*hero image*/
 .hero_image {
+  display:flex;
+  flex-direction: column;
+  background-image: url("../images/CFG-hero-image.jpg");
   height: 600px;
+  background-position: center;
+  background-size: cover;
 }
 
-.hero_image img {
-    height: 600px;
-    width: 100%;
-    object-fit: cover;
-}
 
 
 /*main page content*/
@@ -66,6 +66,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-align: center;
     background-image: linear-gradient(#E9D4E3,whitesmoke, #C4EEF2);
 }
 
@@ -113,15 +114,35 @@
     align-items: center;
     justify-content: center;
   }
+
+  .carousel_slides_box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .carousel_slides_box :nth-child(1) { 
+    order: 2;
+
+  }
+  .carousel_slides_box :nth-child(2) {
+    order: 1;
+  }
+  .carousel_slides_box :nth-child(3) {
+    order: 3;
+  }
   
   /* Make the images invisible by default */
   .carousel_slide {
-    display: none;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
   }
   
   .carousel_slide img {
     border: #F2A0BE solid;
     border-radius: 10px;
+    object-fit: contain;
   }
   
   /* forward & Back buttons */
