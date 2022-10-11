@@ -5,7 +5,7 @@
 }
 
 body {
-  height: 100vh;
+  height: 100%;
   width: auto;
 }
 
@@ -83,6 +83,7 @@ textarea {
   box-sizing: border-box;
   border: #015C75 solid 2px;
   border-radius: 5px;
+  width: 300px;
   background-color: whitesmoke;
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
@@ -90,12 +91,23 @@ textarea {
   resize: none;
 }
 
+select {
+  padding: 5px;
+  border: 1px solid #015C75;
+  border-radius: 5px;
+  height: 40px;
+  width: 300px;
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  color: #015C75;
+}
+
 .orderButton {
   font-family: 'Montserrat', sans-serif;
   padding: 20px;
   display: block;
   margin: 10px;
-  width: 200px;
+  width: 300px;
   background-color: #015C75;
   border: solid 2px #015C75;
   border-radius: 10px;
@@ -106,6 +118,11 @@ textarea {
   color: whitesmoke;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
+}
+
+#editOrderButton:hover {
+  color: whitesmoke;
+  text-decoration: none;
 }
 
 /*footer*/

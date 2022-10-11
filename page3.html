@@ -57,12 +57,20 @@
           <br>
           <textarea id="dietaryRequirements" name="dietaryRequirements" rows="5" cols="36" placeholder="e.g. vegan, gluten free, nut free"></textarea>
           <br>
+          <br>
+          <h3>Tell us how many cakes you would like:</h3>
+          <select name="quantity" id="quantitySelect">
+            <option value="heading">Select number of cakes</option>
+            <option value="Six">6  -  £20.00</option>
+            <option value="Twelve">12  -  £30.00</option>
+            <option value="Twenty Four">24  -  £38.00</option>
+            <option value="Thirty Six">36  -  £45.00</option>
+          </select>
+          <p>Price includes Delivery</p>
         </div>
-              
-        
         <div>         
-          <button class="orderButton">Submit Order</button>
-          <button class="orderButton"><a href="./page2.html">Edit Order</a></button>
+          <button class="orderButton">Submit Order & Pay</button>
+          <button class="orderButton"><a id="editOrderButton" href="./page2.html">Edit Order</a></button>
         </div>
 
       </div>
