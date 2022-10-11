@@ -9,7 +9,6 @@
   width: 60px;
 }
 
-
 .background {
   height: auto;
   background-color: white;
@@ -50,7 +49,7 @@
   margin-bottom: 100px;
 }
 
-h1 {
+.page_heading {
   font-family: 'Caveat', cursive;
   font-size: 80px;
   text-align: center;
@@ -58,12 +57,19 @@ h1 {
   padding: 40px 0 0 40px;
 }
 
-h2 {
+.subHeading {
   font-family: 'Caveat', cursive;
-  font-size: 40px;
+  font-size: 60px;
   text-align: center;
   color: #015C75;
   padding: 40px 0 0 40px;
+}
+
+h3 {
+  font-family: 'Caveat', cursive;
+  font-size: 60px;
+  text-align: center;
+  color: #015C75;
 }
 
 .chosen_cake {
@@ -104,6 +110,18 @@ select {
   color: #015C75;
 }
 
+#packagingSelect {
+  font-size: 15px;
+  padding: 5px;
+  border: 1px solid #015C75;
+  border-radius: 5px;
+  height: 40px;
+  width: 200px;
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  color: #015C75;
+}
+
 p {
   display: flex;
   justify-content: center;
@@ -116,6 +134,7 @@ p {
 
 .page2Bottom {
   background-color: #F3F1F4;
+  height: 90vh;
 }
 
 .packaging {
@@ -144,7 +163,7 @@ p {
   font-family: 'Montserrat', sans-serif;
   padding: 20px;
   margin: 10px;
-  width: 200px;
+  width: 250px;
   background-color: #015C75;
   border: solid 2px #015C75;
   border-radius: 10px;
@@ -152,8 +171,14 @@ p {
 
 .reviewButton a {
   color: whitesmoke;
+  font-size: 15px;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
+}
+
+#reviewButton:hover {
+  color: whitesmoke;
+  text-decoration: none;
 }
 
 /*footer*/

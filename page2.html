@@ -31,16 +31,17 @@
     </div>
   </div>
 
+  <main>
   <!-- HERO IMAGE -->
   <img class="heroImage" src="./images/CFG-hero-image.jpg" alt="Hero Image">
   
   <!-- MAIN CONTENT -->
   <div class="background">
-      <h1>Design Your Cupcake</h1>
+      <h1 class="page_heading">Design Your Cupcake</h1>
       
       <div class="select">
         <div class="frosting_sprinkles">
-          <h2>Sponge</h2>
+          <h2 class="subHeading">Sponge</h2>
           <form>
             <select id="flavourSelect" onchange="selectFlavour()">
               <option value="">Select a Flavour</option>
@@ -54,7 +55,7 @@
 
       <div class="toppings">
         <div class="frosting_sprinkles">
-          <h2>Toppings</h2>
+          <h2 class="subHeading">Toppings</h2>
             <form>
               <select name="frosting" id="frostingSelect" onchange="selectFrosting()">
                 <option value="heading">Select a Frosting</option>
@@ -75,7 +76,7 @@
         </div>
       </div>
 
-      <h2>Your Finished Cake</h2>
+      <h2 class="subHeading">Your Finished Cake</h2>
       <div class="selectedCake">
         <img class="chosen_cake" src="./images/cake first girls logo.png" alt="Selected Cake">
       </div>    
@@ -83,8 +84,8 @@
 
     <!-- BOTTOM OF PAGE -->
     <div class="page2Bottom">
-      <h2>Looking Good!<div>
-        <h6>Now choose your packaging<h6>  
+      <h2 class="subHeading">Looking Good!<h2>
+        <h3>Now choose your packaging<h3>  
           <div class="packaging">
             <img class="packaging_image" src="./images/green_cake_box.jpg" alt="packaging">  
             <img class="packaging_image" src="./images/orange_cake_box.jpg" alt="packaging">  
@@ -108,10 +109,11 @@
           </form>
       <p>You can tell us about any dietary requirements and review your order on the next page</p>
       <div class="buttonContainer">
-        <button class="reviewButton"><a href="./page3.html">Review Your Order</a></button>
+        <button class="reviewButton"><a id="reviewButton" href="./page3.html">Review Your Order</a></button>
       </div>
     </div>
-  </div>
+  </main>
+  
 
    <footer class="main_footer">
         <div class="left_footer">
