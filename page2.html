@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Configure your cupcake</title>
-  <link rel="stylesheet" href="./css/page2.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
@@ -15,19 +15,20 @@
   <script src="./js/page2.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/page2.css">
 </head>
 <body>
   <!-- NAVBAR -->
   <div class="navbar">
     <div class="nav_img_left">
-      <a href="#"><img id="logo" src="./images/cake first girls logo.png" alt="Logo"></a>
+      <a href="./index.html"><img id="logo" src="./images/cake first girls logo.png" alt="Logo"></a>
     </div>
     <div class="nav_heading">
-      <a href="#"><span style="font-family: 'Caveat', cursive;">CAKE</span> First Girls</a>
+      <a href="./index.html"><span class="cake_heading" style="font-family: 'Caveat', cursive;">CAKE </span> First Girls</a>
     </div>
     <div class="nav_right">
-      <a href="#">Shop</a>
-      <a href="#">Basket</a>
+      <a href="./page2.html">Shop</a>
+      <a href="./page3.html">Basket</a>
     </div>
   </div>
 
@@ -85,7 +86,7 @@
     <!-- BOTTOM OF PAGE -->
     <div class="page2Bottom">
       <h2 class="subHeading">Looking Good!<h2>
-        <h3>Now choose your packaging<h3>  
+        <h3>Now choose your packaging</h3>  
           <div class="packaging">
             <img class="packaging_image" src="./images/green_cake_box.jpg" alt="packaging">  
             <img class="packaging_image" src="./images/orange_cake_box.jpg" alt="packaging">  
@@ -95,21 +96,25 @@
             <img class="packaging_image" src="images/teal_cake_box.jpg" alt="packaging">  
             <img class="packaging_image" src="images/yellow_cake_box.jpg" alt="packaging">  
           </div>
-          <form>
-            <select name="packaging" id="packagingSelect" onchange="selectPackaging()">
-              <option value="heading">Select Packaging</option>
-              <option value="Green">Green</option>
-              <option value="Orange">Orange</option>
-              <option value="Purple Confetti">Purple Confetti</option>
-              <option value="Yellow Stripes">Yellow Stripes</option>
-              <option value="Pink">Pink</option>
-              <option value="Teal">Teal</option>
-              <option value="Yellow">Yellow</option>
-            </select>
-          </form>
-      <p>You can tell us about any dietary requirements and review your order on the next page</p>
-      <div class="buttonContainer">
-        <button class="reviewButton"><a id="reviewButton" href="./page3.html">Review Your Order</a></button>
+          <div class="packaging_form">
+            <form>
+              <select name="packaging" id="packagingSelect" onchange="selectPackaging()">
+                <option value="heading">Select Packaging</option>
+                <option value="Green">Green</option>
+                <option value="Orange">Orange</option>
+                <option value="Purple Confetti">Purple Confetti</option>
+                <option value="Yellow Stripes">Yellow Stripes</option>
+                <option value="Pink">Pink</option>
+                <option value="Teal">Teal</option>
+                <option value="Yellow">Yellow</option>
+              </select>
+            </form>
+        </div>
+      <div class = "review_order">
+        <p>You can tell us about any dietary requirements and review your order on the next page</p>
+        <div class="buttonContainer">
+          <button class="reviewButton"><a id="reviewButton" href="./page3.html">Review Your Order</a></button>
+        </div>
       </div>
     </div>
   </main>
@@ -120,13 +125,13 @@
           <p>&copy Cake First Girls 2022</p>
         </div>
         <div class="middle_footer">
-          <a href="#">Home |</a>
-          <a href="#">About |</a>
-          <a href="#">Shop |</a>
-          <a href="#">Help |</a>
-          <a href="#">Charity |</a>
-          <a href="#">FAQ |</a>
-          <a href="#">Terms and Conditions</a>
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./page2.html">Shop</a>
+          <a href="./help.html">Help</a>
+          <a href="./charity.html">Charity</a>
+          <a href="./faq.html">FAQ</a>
+          <a href="./terms.html">Terms and Conditions</a>
         </div>
         <div class="right_footer">
           <p>Made with Love &#9829</p>

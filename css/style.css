@@ -5,36 +5,58 @@
     box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 0;
+}
+a:hover {
+  text-decoration: none;
+}
+
+
 /* header nav bar */ 
 #logo {
   height: 60px;
   width: 60px;
+  vertical-align: unset;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  height: 100px;
   width: 100%;
   background-color: #F2A0BE;
-  font-size: 15px;
+  font-size: 1.1rem;
   font-family: 'Montserrat', sans-serif;
-  padding: 20px 10px 20px 10px;
 }
+
 .nav_heading a {
   color: whitesmoke;
   text-decoration: none;
-  font-size: 50px;
+  font-size: 3rem;
   font-family: 'Montserrat', sans-serif;
 }
+
+.nav_heading {
+  padding-left: 50px;
+}
+
+.cake_heading {
+  word-spacing: 10px;
+}
+
 .nav_right a {
   text-decoration: none;
   padding: 0 5px;
-}
-.nav_right a:visited {
   color: whitesmoke;
 }
+
+.nav_right a:hover {
+  color: #015C75;
+}
+
+
 .banner_image {
   height: 200px;
   width: 100%;
@@ -49,13 +71,13 @@
 
 
 /*hero image*/
-.hero_image {
-  display:flex;
-  flex-direction: column;
-  background-image: url("../images/CFG-hero-image.jpg");
-  height: 600px;
-  background-position: center;
-  background-size: cover;
+.heroImage {
+  display: flex;
+  width: 100%;
+  border-bottom: #015C75 solid 0.5px;
+  object-fit: cover;
+  object-position: center;
+  min-height: 250px;
 }
 
 
@@ -67,7 +89,7 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-    background-image: linear-gradient(#E9D4E3,whitesmoke, #C4EEF2);
+    background-image: linear-gradient(#F3F1F4, whitesmoke, #C4EEf2);
 }
 
 
@@ -76,7 +98,7 @@
     display:flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 70px;
+    margin-top: 50px;
     justify-content: center
 }
 
@@ -84,7 +106,7 @@
     margin: 20px;
     font-family: 'Caveat', cursive;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 4rem;
     color: #015C75;
 }
 
@@ -172,15 +194,11 @@
   .carousel_text {
     color: #015C75;
     font-family: 'Montserrat', sans-serif;
-    font-size: 26px;
+    font-size: 1.7rem;
     margin-top: 10px;;
     text-align: center;
   }
   
-  
- 
-
-
   /*shop now button*/
   .shop_now_button { 
     margin-top: 20px;
@@ -189,16 +207,22 @@
     background-color: #015C75;
     color: whitesmoke;
     height: 60px;
-    width: 276px;
+    width: 250px;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 10px;
     font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
   }
 
   .shop_now_button a {
     color: whitesmoke;
     text-decoration: none;
+  }
+
+  .shop_now_button:hover {
+    border: whitesmoke solid 3px;
+
   }
 
 /*footer*/
@@ -211,18 +235,30 @@
     width: 100%;
     background-color: #E9D4E3;
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+    font-size: 1rem;
     color: #015C75;
     padding: 20px 10px 20px 10px;
+    text-align: center;
   }
- 
-  .middle_footer a:visited {
-    color: #015C75;
+
+  .main_footer p {
+    padding: 20px;
   }
  
   .middle_footer a {
+    color: #015C75;
     text-decoration: none;
-  }  
+  }
+
+  .middle_footer a:not(:last-child)::after {
+    content: "|";
+    padding-left: 0.3rem;
+  }
+
+
+  .middle_footer a:hover {
+    color: whitesmoke;
+  }
 
 .social_footer {
     display: flex;
@@ -246,4 +282,87 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+}
+
+
+/* media queries*/
+
+@media screen and (max-width: 768px) {
+    .nav_heading a{
+      font-size: 2.8rem;
+    }
+
+    .nav_heading {
+      padding-left: 10px;
+    }
+
+    .intro_text h2 {
+      font-size: 3rem;
+    }
+
+    .intro_text p {
+      font-size: 1.3rem;
+    }
+    
+    .carousel_container img {
+      width: 300px;
+    }
+
+    .carousel_text {
+      font-size: 1.4rem;
+    }
+
+    .shop_now_button {
+      height: 50px;
+      width: 220px;
+      font-size: 1.2rem;
+    }
+
+    .main_footer {
+      flex-direction: column;
+      height: 160px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .nav_heading a {
+    padding-left: 0;
+  }
+
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .nav_heading a {
+    font-size: 2.4rem;
+  }
+
+  .intro_text {
+    margin-top: 20px;
+  }
+
+  .intro_text h2 {
+    font-size: 2.5rem;
+  }
+
+  .intro_text p {
+    font-size: 1.2rem;
+  }
+
+  .carousel_container img {
+    width: 250px;
+  }
+
+  .main_footer {
+    font-size: 0.9rem;
+  }
+  
 }

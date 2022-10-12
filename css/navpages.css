@@ -3,10 +3,15 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 0;
+  }
  
   #logo {
     height: 60px;
     width: 60px;
+    vertical-align: unset;
   }
  
  
@@ -22,25 +27,33 @@
     height: 100px;
     width: 100%;
     background-color: #F2A0BE;
-    font-size: 15px;
+    font-size: 1.1rem;
     font-family: 'Montserrat', sans-serif;
-    padding: 20px 10px 20px 10px;
   }
  
   .nav_heading a {
     color: whitesmoke;
     text-decoration: none;
-    font-size: 50px;
+    font-size: 3rem;
     font-family: 'Montserrat', sans-serif;
+  }
+
+  .nav_heading {
+    padding-left: 50px;
+}
+
+  .cake_heading {
+    word-spacing: 10px;
   }
  
   .nav_right a {
     text-decoration: none;
     padding: 0 5px;
+    color: whitesmoke;
   }
  
-  .nav_right a:visited {
-    color: whitesmoke;
+  .nav_right a:hover {
+    color: #015C75;
   }
 
   .banner_image {
@@ -57,23 +70,25 @@
     display: flex;
     width: 100%;
     border-bottom: #015C75 solid 0.5px;
-    margin-bottom: 100px;
+    object-fit: cover;
+    object-position: center;
+    min-height: 250px;
   }
  
   h1 {
     font-family: 'Caveat', cursive;
-    font-size: 80px;
+    font-size: 4rem;
     text-align: center;
     color: #015C75;
-    padding: 40px 0 0 40px;
+    padding: 40px 0 40px 0;
   }
  
   h2 {
     font-family: 'Caveat', cursive;
-    font-size: 40px;
+    font-size: 3rem;
     text-align: center;
     color: #015C75;
-    padding: 40px 0 0 40px;
+    padding: 40px 0 40px 0;
   }
  
  
@@ -82,12 +97,12 @@
   }
 
   .about_main {
-    padding: 0px;
+    padding: 20px 20px;
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    background-image: linear-gradient(#E9D4E3,whitesmoke, #C4EEF2);
+    background-image: linear-gradient(#F3F1F4, whitesmoke, #C4EEf2);
 }
 
 .charity_main {
@@ -96,7 +111,7 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-    background-image: linear-gradient(#E9D4E3,whitesmoke, #C4EEF2);
+    background-image: linear-gradient(#F3F1F4, whitesmoke, #C4EEf2);
 }
 
 .charity_main p {
@@ -105,7 +120,7 @@
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     color: #015C75;
-    font-size: 18px;
+    font-size: 1.2rem;
     padding: 20px;
     margin-left: 70px;
     margin-right: 70px;
@@ -118,7 +133,7 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-    background-image: linear-gradient(#E9D4E3,whitesmoke, #C4EEF2);
+    background-image: linear-gradient(#F3F1F4, whitesmoke, #C4EEf2);
 }
 
 .terms_main p {
@@ -127,7 +142,7 @@
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     color: #015C75;
-    font-size: 18px;
+    font-size: 1rem;
     padding: 20px;
     margin-left: 70px;
     margin-right: 70px;
@@ -139,7 +154,7 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-    background-image: linear-gradient(#E9D4E3,whitesmoke, #C4EEF2);
+    background-image: linear-gradient(#F3F1F4, whitesmoke, #C4EEf2);
 }
 
 .about_main p {
@@ -148,7 +163,7 @@
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     color: #015C75;
-    font-size: 18px;
+    font-size: 1.2rem;
     padding: 20px;
     margin-left: 70px;
     margin-right: 70px;
@@ -171,7 +186,7 @@
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     color: #015C75;
-    font-size: 18px;
+    font-size: 1.2rem;
     padding: 20px;
   }
  
@@ -179,28 +194,7 @@
     background-color: #F3F1F4;
   }
  
- 
-  .buttonContainer {
-    text-align: center;
-    padding-bottom: 30px;
-  }
- 
-  .reviewButton {
-    font-family: 'Montserrat', sans-serif;
-    padding: 20px;
-    margin: 10px;
-    width: 200px;
-    background-color: #015C75;
-    border: solid 2px #015C75;
-    border-radius: 10px;
-  }
- 
-  .reviewButton a {
-    color: whitesmoke;
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-  }
- 
+   
 .main_footer {
     display: flex;
     justify-content: space-between;
@@ -210,18 +204,30 @@
     width: 100%;
     background-color: #E9D4E3;
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+    font-size: 1rem;
     color: #015C75;
     padding: 20px 10px 20px 10px;
+    text-align: center;
   }
- 
-  .middle_footer a:visited {
-    color: #015C75;
+
+  .main_footer p {
+    font-size: 1rem;
   }
  
   .middle_footer a {
+    color: #015C75;
     text-decoration: none;
   }  
+
+  .middle_footer a:not(:last-child)::after {
+    content: "|";
+    padding-left: 0.3rem;
+  }
+
+
+  .middle_footer a:hover {
+    color: whitesmoke;
+  }
 
 .social_footer {
     display: flex;
@@ -245,4 +251,84 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+}
+
+
+/* media queries*/
+
+@media screen and (max-width: 768px) {
+  .nav_heading a{
+    font-size: 2.8rem;
+  }
+
+  .nav_heading {
+    padding-left: 10px;
+  }
+
+  h2 {
+    font-size: 2.8rem;
+  }
+
+  p {
+    font-size: 1.1rem !important;
+  }
+
+  .main_footer {
+    flex-direction: column;
+    height: 160px;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+.navbar {
+  flex-direction: column;
+  height: auto;
+  text-align: center;
+}
+
+.nav_heading a {
+  padding-left: 0;
+}
+
+
+}
+
+@media screen and (max-width: 480px) {
+
+.nav_heading a {
+  font-size: 2.4rem;
+}
+
+.intro_text {
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.1rem !important;
+}
+
+.terms_main p {
+  font-size: 0.9rem !important;
+}
+
+.charity_main p {
+  margin: 0 20px;
+}
+
+.main_footer {
+  font-size: 0.9rem;
+}
+
+.main_footer p{
+  font-size: 0.9rem !important;
+}
+
+
+}
+
 }

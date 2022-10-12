@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 0;
+}
+
 body {
   height: 100%;
   width: auto;
@@ -12,11 +16,14 @@ body {
 #logo {
   height: 60px;
   width: 60px;
+  vertical-align: unset;
 }
 
 .background {
   height: 100%;
-  background-image: linear-gradient(#F3F1F4, #C4EEf2);
+  padding: 20px;
+  background-image: linear-gradient(#F3F1F4, whitesmoke, #C4EEf2);
+
 }
 
 .navbar {
@@ -26,30 +33,39 @@ body {
   height: 100px;
   width: 100%;
   background-color: #F2A0BE;
-  font-size: 15px;
+  font-size: 1.1rem;
   font-family: 'Montserrat', sans-serif;
-  padding: 20px 10px 20px 10px;
 }
 
 .nav_heading a {
   color: whitesmoke;
   text-decoration: none;
-  font-size: 50px;
+  font-size: 3rem;
   font-family: 'Montserrat', sans-serif;
+}
+
+.nav_heading {
+  padding-left: 50px;
+}
+
+.cake_heading {
+  word-spacing: 10px;
 }
 
 .nav_right a {
   text-decoration: none;
   padding: 0 5px;
-}
-
-.nav_right a:visited {
   color: whitesmoke;
 }
 
+.nav_right a:hover {
+  color: #015C75;
+}
+
+
 h2 {
   font-family: 'Caveat', cursive;
-  font-size: 50px;
+  font-size: 4rem;
   text-align: center;
   color: #015C75;
   padding: 40px 0 0 40px;
@@ -64,17 +80,28 @@ h2 {
   color: #015C75;
 }
 
+.summary_page p {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
 .page_heading {
   font-family: 'Caveat', cursive;
-  font-size: 50px;
+  font-size: 4rem;
   text-align: center;
   color: #015C75;
-  padding: 40px 0 0 40px;
+  padding: 50px 0 50px 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .your_cake_img {
-  height: 250px;
-  width: 250px;
+  height: 240px;
+  width: 240px;
   border: #015C75 solid 1px;
   border-radius: 10px;
 }
@@ -83,6 +110,7 @@ textarea {
   box-sizing: border-box;
   border: #015C75 solid 2px;
   border-radius: 5px;
+  padding: 0 10px;
   width: 300px;
   background-color: whitesmoke;
   font-size: 20px;
@@ -100,11 +128,13 @@ select {
   background-color: white;
   font-family: 'Montserrat', sans-serif;
   color: #015C75;
+  margin-bottom: 20px;
 }
 
 .orderButton {
   font-family: 'Montserrat', sans-serif;
-  padding: 20px;
+  font-size: 1.3rem;
+  padding: 15px;
   display: block;
   margin: 10px;
   width: 300px;
@@ -120,9 +150,8 @@ select {
   font-family: 'Montserrat', sans-serif;
 }
 
-#editOrderButton:hover {
-  color: whitesmoke;
-  text-decoration: none;
+.orderButton:hover {
+  border: whitesmoke solid 3px;
 }
 
 /*footer*/
@@ -138,15 +167,27 @@ select {
     font-size: 15px;
     color: #015C75;
     padding: 20px 10px 20px 10px;
+    text-align: center;
   }
- 
-  .middle_footer a:visited {
-    color: #015C75;
+
+  .main_footer p {
+    padding: 20px;
   }
  
   .middle_footer a {
+    color: #015C75;
     text-decoration: none;
   }  
+
+  .middle_footer a:not(:last-child)::after {
+    content: "|";
+    padding-left: 0.3rem;
+  }
+
+
+  .middle_footer a:hover {
+    color: whitesmoke;
+  }
 
 .social_footer {
     display: flex;
@@ -170,4 +211,117 @@ select {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+}
+
+/* media queries*/
+
+@media screen and (max-width: 768px) {
+  .nav_heading a{
+    font-size: 2.8rem;
+  }
+
+  .nav_heading {
+    padding-left: 10px;
+  }
+
+  .page_heading {
+    font-size: 3.5rem;
+    padding: 30px 0;
+  }
+
+  .subHeading {
+    font-size: 3rem;
+    padding: 20px 0  10px 0;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .summary_page p {
+    font-size: 1.1rem;
+  }
+
+  .your_cake_img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .orderButton {
+    width: 250px;
+    padding: 10px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+  }
+
+  select {
+    margin-top: 20px;
+  }
+
+  .main_footer {
+    flex-direction: column;
+    height: 160px;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+.navbar {
+  flex-direction: column;
+  height: auto;
+  text-align: center;
+}
+
+.nav_heading a {
+  padding-left: 0;
+}
+
+
+}
+
+@media screen and (max-width: 480px) {
+
+.nav_heading a {
+  font-size: 2.4rem;
+}
+
+  .page_heading {
+    font-size: 3.2rem;
+    padding: 10px 0;
+  }
+
+  .subHeading {
+    font-size: 3rem;
+  }
+  
+  h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+
+  .summary_page p {
+    font-size: 1rem;
+  }
+
+  .your_cake_img {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 20px;
+  }
+
+  .orderButton {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+
+  select {
+    margin-top: 20px;
+  }
+
+
+.main_footer {
+  font-size: 0.9rem;
+}
+
 }
